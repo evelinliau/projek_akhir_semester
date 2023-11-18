@@ -10,20 +10,35 @@ section
     height: 100vh;
     /* background-color: aqua; */
 }
-section.page1
+section.page1 
 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.7)),url("netflix\ background.jpg");
     
 }
+div.box 
+{
+    width: 100%;
+    height: 10px;
+    background-image: linear-gradient(black, rgba(0, 0, 0, 1));
+
+}
+section.page2 
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.7)),url("netflix\ background\ 2.jpg");
+    
+}
+
 section.page1 header nav
 {
     height: 50px;
+    
 } 
 section.page1 header nav img 
 {
     width: 150px;   
     margin-left: 150px;
-    margin-top: 30px;   
+    margin-top: 30px;  
+    
 }
 section.page1 header nav 
 {
@@ -31,6 +46,7 @@ section.page1 header nav
     align-items: center;
     justify-content: space-between;
     padding: 20px 0px;
+    
 }
 section.page1 header nav div button
 {
@@ -58,15 +74,19 @@ section.page1 header nav div button:hover
     cursor: pointer;
     
 }
+section.page1 header nav div button.sign
+{
+    margin-right: 200px;
+}
 section.page1 header nav div button.language
 {
-    width: 100px;
+    width: 110px;
     border: 2px solid white;
     background: none;
 }
 section.page1 header nav div button.language:hover
 {
-    width: 100px;
+    width: 110px;
     border: 2px solid black;
     background-image: linear-gradient(lightgrey, lightgrey);
     cursor: pointer;
@@ -130,3 +150,547 @@ section.page1 header div.fonts button:hover
     cursor: pointer;
 }
 
+section.page2 nav
+{
+    width: 1200px;
+    height: 70px;
+    /* background-color: #db0001; */
+    margin: 0px auto;
+}
+section.page2 nav h1
+{
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-style: italic;
+    line-height: 100px;
+    
+}
+section.page2 div.frame
+{
+    width: 800px;
+    height: 450px;
+    /* background-color: #db0001; */
+    margin: 0px auto;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+.frame
+{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.frame div.slides
+{
+    width: 100%;
+    height: 100vh;
+    display: none;
+    position: absolute;
+    animation: slide 3s ease infinite;
+}
+.frame .slides:nth-child(1)
+{
+    background-image: url("boboiboy\ 1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.frame .slides:nth-child(2)
+{
+    background-image: url("Boboiboy-Movie-2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.frame .slides:nth-child(3)
+{
+    background-image: url("mario.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.frame .slides:nth-child(4)
+{
+    background-image: url("ejen.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}.frame .slides:nth-child(5)
+{
+    background-image: url("inside\ out.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.frame .slides:nth-child(6)
+{
+    background-image: url("oshi\ no\ ko.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}.frame .slides:nth-child(7)
+{
+    background-image: url("rael.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+@keyframes slides
+{
+    0%, 100% { opacity: 0;}
+    10%, 90% { opacity: 1;}
+}
+
+@media only screen and (max-width: 992px)
+{
+    section.page1 header nav
+    {
+        height: 50px;
+        
+    } 
+    section.page1 header nav img 
+    {
+        width: 150px;   
+        margin-left: 100px;
+        margin-top: 30px;  
+        
+        
+    }
+    section.page1 header nav 
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0px;
+        
+    }
+    section.page1 header nav div button
+    {
+        margin-top: 20px;
+        width: 80px;
+        height: 30px;
+        border-radius: 4px;
+        background-color: #db0001;
+        border: 0px;
+        color: white;
+        font-size: 15px;
+        
+        
+    }
+    section.page1 header nav div button:hover
+    {
+        margin-top: 20px;
+        width: 80px;
+        height: 30px;
+        border-radius: 4px;
+        background-color: #ff8080;
+        border: 0px;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        
+    }
+    section.page1 header nav div button.sign
+    {
+        margin-right: 120px;
+    }
+    section.page1 header nav div button.language
+    {
+        width: 110px;
+        border: 2px solid white;
+        background: none;
+        font-size: 15px;
+        
+    }
+    section.page1 header nav div button.language:hover
+    {
+        width: 110px;
+        border: 2px solid black;
+        background-image: linear-gradient(lightgrey, lightgrey);
+        cursor: pointer;
+        color: black;
+    }
+
+    section.page1 header div.fonts h1
+    {
+        font-family: 'Roboto', sans-serif;
+        font-size: 40px;
+        word-spacing: 3px;
+        margin-bottom: 20px;
+    }
+    section.page1 header div.fonts h3
+    {
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        word-spacing: 3px;
+        font-weight: lighter;
+    }
+    section.page1 header div.fonts h4
+    {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: lighter;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    section.page1 header div.fonts button
+    {
+        width: 250px;
+        height: 80px;
+        border-radius: 15px;
+        background-color: #db0001;
+        border: 0px;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        margin-right: 50px;
+    }
+    section.page1 header div.fonts button:hover
+    {
+        width: 250px;
+        height: 80px;
+        border-radius: 15px;
+        background: none;
+        border: 2px solid whitesmoke;
+        color: #db0001;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-right: 50px;
+    }
+
+    section.page2 nav
+    {
+        width: 672px;
+        height: 70px;
+        /* background-color: #db0001; */
+        margin: 0px auto;
+    }
+    section.page2 nav h1
+    {
+        color: whitesmoke;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-size: 50px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        font-style: italic;
+        line-height: 200px;
+          
+    }
+    section.page2 div.frame
+    {
+        width: 600px;
+        height: 337.5px;
+        /* background-color: #db0001; */
+        margin: 0px auto;
+        margin-top: 50px;
+        border-radius: 10px;
+        margin-top: 150px;
+    }
+    
+}
+
+@media only screen and (max-width: 768px)
+{
+    section.page1 header nav
+    {
+        height: 50px;
+        
+    } 
+    section.page1 header nav img 
+    {
+        width: 150px;   
+        margin-left: 50px;
+        margin-top: 30px;  
+        
+        
+    }
+    section.page1 header nav 
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0px;
+        
+    }
+    section.page1 header nav div button
+    {
+        margin-top: 20px;
+        width: 70px;
+        height: 25px;
+        border-radius: 4px;
+        background-color: #db0001;
+        border: 0px;
+        color: white;
+        font-size: 15px;
+        
+        
+    }
+    section.page1 header nav div button:hover
+    {
+        margin-top: 20px;
+        width: 70px;
+        height: 25px;
+        border-radius: 4px;
+        background-color: #ff8080;
+        border: 0px;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        
+    }
+    section.page1 header nav div button.sign
+    {
+        margin-right: 80px;
+    }
+    section.page1 header nav div button.language
+    {
+        width: 100px;
+        border: 2px solid white;
+        background: none;
+        font-size: 15px;
+        
+    }
+    section.page1 header nav div button.language:hover
+    {
+        width: 100px;
+        border: 2px solid black;
+        background-image: linear-gradient(lightgrey, lightgrey);
+        cursor: pointer;
+        color: black;
+    }
+
+    section.page1 header div.fonts h1
+    {
+        font-family: 'Roboto', sans-serif;
+        font-size: 35px;
+        word-spacing: 3px;
+        margin-bottom: 20px;
+    }
+    section.page1 header div.fonts h3
+    {
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        word-spacing: 3px;
+        font-weight: lighter;
+    }
+    section.page1 header div.fonts h4
+    {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        font-weight: lighter;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    section.page1 header div.fonts button
+    {
+        width: 220px;
+        height: 60px;
+        border-radius: 10px;
+        background-color: #db0001;
+        border: 0px;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        margin-right: 50px;
+    }
+    section.page1 header div.fonts button:hover
+    {
+        width: 220px;
+        height: 60px;
+        border-radius: 10px;
+        background: none;
+        border: 2px solid whitesmoke;
+        color: #db0001;
+        font-size: 25px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-right: 50px;
+    }
+
+    section.page2 nav
+    {
+        width: 448px;
+        height: 70px;
+        /* background-color: #db0001; */
+        margin: 0px auto;
+    }
+    section.page2 nav h1
+    {
+        color: whitesmoke;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        font-style: italic;
+        line-height: 150px;
+        margin: 0px auto;
+
+        
+    }
+    section.page2 div.frame
+    {
+        width: 500px;
+        height: 281.25px;
+        /* background-color: #db0001; */
+        margin: 0px auto;
+        margin-top: 50px;
+        border-radius: 10px;
+        margin-top: 150px;
+    }
+    
+}
+
+@media only screen and (max-width: 600px)
+{
+    section.page1 header nav
+    {
+        height: 50px;
+        
+    } 
+    section.page1 header nav img 
+    {
+        width: 100px;   
+        margin-left: 50px;
+        margin-top: 30px;  
+        
+        
+    }
+    section.page1 header nav 
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0px;
+        
+    }
+    section.page1 header nav div button
+    {
+        margin-top: 20px;
+        width: 70px;
+        height: 25px;
+        border-radius: 4px;
+        background-color: #db0001;
+        border: 0px;
+        color: white;
+        font-size: 15px;
+        
+        
+    }
+    section.page1 header nav div button:hover
+    {
+        margin-top: 20px;
+        width: 70px;
+        height: 25px;
+        border-radius: 4px;
+        background-color: #ff8080;
+        border: 0px;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        
+    }
+    section.page1 header nav div button.sign
+    {
+        margin-right: 80px;
+    }
+    section.page1 header nav div button.language
+    {
+        width: 100px;
+        border: 2px solid white;
+        background: none;
+        font-size: 15px;
+        
+    }
+    section.page1 header nav div button.language:hover
+    {
+        width: 100px;
+        border: 2px solid black;
+        background-image: linear-gradient(lightgrey, lightgrey);
+        cursor: pointer;
+        color: black;
+    }
+
+    section.page1 header div.fonts h1
+    {
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        word-spacing: 3px;
+        margin-bottom: 20px;
+    }
+    section.page1 header div.fonts h3
+    {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        word-spacing: 3px;
+        font-weight: lighter;
+    }
+    section.page1 header div.fonts h4
+    {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: lighter;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    section.page1 header div.fonts button
+    {
+        width: 150px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: #db0001;
+        border: 0px;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        margin-right: 50px;
+    }
+    section.page1 header div.fonts button:hover
+    {
+        width: 150px;
+        height: 30px;
+        border-radius: 5px;
+        background: none;
+        border: 2px solid whitesmoke;
+        color: #db0001;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-right: 50px;
+    }
+
+    section.page2 nav
+    {
+        width: 280px;
+        height: 70px;
+        /* background-color: #db0001; */
+        margin: 0px auto;
+    }
+    section.page2 nav h1
+    {
+        color: whitesmoke;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        font-style: italic;
+        line-height: 200px;
+        margin: 0px auto;
+        
+    }
+    section.page2 div.frame
+    {
+        width: 400px;
+        height: 225px;
+        /* background-color: #db0001; */
+        margin: 0px auto;
+        margin-top: 50px;
+        border-radius: 10px;
+        margin-top: 200px;
+    }
+    
+}
