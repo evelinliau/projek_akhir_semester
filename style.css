@@ -1,0 +1,132 @@
+* 
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+section
+{
+    height: 100vh;
+    /* background-color: aqua; */
+}
+section.page1
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.7)),url("netflix\ background.jpg");
+    
+}
+section.page1 header nav
+{
+    height: 50px;
+} 
+section.page1 header nav img 
+{
+    width: 150px;   
+    margin-left: 150px;
+    margin-top: 30px;   
+}
+section.page1 header nav 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+section.page1 header nav div button
+{
+    margin-top: 20px;
+    width: 80px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #db0001;
+    border: 0px;
+    color: white;
+    font-size: 15px;
+    margin-right: 40px;
+    
+}
+section.page1 header nav div button:hover
+{
+    margin-top: 20px;
+    width: 80px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #ff8080;
+    border: 0px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+section.page1 header nav div button.language
+{
+    width: 100px;
+    border: 2px solid white;
+    background: none;
+}
+section.page1 header nav div button.language:hover
+{
+    width: 100px;
+    border: 2px solid black;
+    background-image: linear-gradient(lightgrey, lightgrey);
+    cursor: pointer;
+    color: black;
+}
+section.page1 header div.fonts
+{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 550px;
+
+}
+section.page1 header div.fonts h1
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    word-spacing: 3px;
+    margin-bottom: 20px;
+}
+section.page1 header div.fonts h3
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    word-spacing: 3px;
+    font-weight: lighter;
+}
+section.page1 header div.fonts h4
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    word-spacing: 3px;
+    font-weight: lighter;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+section.page1 header div.fonts button
+{
+    width: 250px;
+    height: 80px;
+    border-radius: 20px;
+    background-color: #db0001;
+    border: 0px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+section.page1 header div.fonts button:hover
+{
+    width: 250px;
+    height: 80px;
+    border-radius: 20px;
+    background: none;
+    border: 2px solid whitesmoke;
+    color: #db0001;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
